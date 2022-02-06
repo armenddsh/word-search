@@ -1,0 +1,48 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  
+  display: grid;
+  place-items: center;
+}
+
+#game {
+  border: 1px solid #000;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+ul > li {
+  list-style: none;
+  padding: .5rem;
+}
+
+#container {
+  display: flex;
+}
+
+div > .cell-hover {
+  background-color: darkgray;
+}
